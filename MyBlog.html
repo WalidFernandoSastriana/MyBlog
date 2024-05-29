@@ -11,7 +11,7 @@
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #1d7dc7;}
+.w3-sidebar {width: 120px;background: linear-gradient(to bottom, #0099ff 0%, #ccffcc 100%);}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
@@ -32,9 +32,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p style="font-weight: bold;">ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p style="font-weight: bold;">PHOTOS</p>
+  <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hover">
+    <i class="fa fa-file-text w3-xxlarge"></i>
+    <p style="font-weight: bold;">PROJECT</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -47,7 +47,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#project" class="w3-bar-item w3-button" style="width:25% !important">PROJECT</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -56,14 +56,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center" id="home">
-    <h1 class="w3-jumbo" style="font-weight: bold;"><span class="w3-hide-small">I'm</span> Walid Fernando Sastriana.</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Walid Fernando Sastriana.</h1>
     <p>Web Development & Data Analyst.</p>
     <img src="image/3 x 4.jpg" alt="boy" class="w3-image" width="720" height="1080">
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-black w3-padding-20" id="about">
-    <h2 class="w3-text-light-grey" style="font-weight: bold;">About Me!</h2>
+    <h2 class="w3-text" style="font-weight: bold; color: rgb(255, 255, 255);">About Me!</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>
       Halo! Nama saya Walid Fernando Sastriana. Saat ini saya adalah seorang mahasiswa  yang sedang mengejar gelar Sarjana Ilmu Komputer di Universitas Bina Nusantara. 
@@ -81,7 +81,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>
       Salam Hormat, Walid.
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey" style="font-weight: bold;">My Skills</h3>
+    <h3 class="w3-text" style="font-weight: bold; color: rgb(255, 255, 255);">My Skills</h3>
     <hr style="width:200px" class="w3-opacity">
     <p class="w3-wide">HTML, CSS, JS</p>
     <div class="w3-white">
@@ -115,44 +115,63 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </div>
     </div>
 
-    <!-- Download Resume -->
-    <h3 class="w3-padding-16 w3-text-light-grey" style="font-weight: bold;">Unduh CV Saya</h3>
-    <hr style="width:200px" class="w3-opacity">
-      <a href="https://drive.google.com/file/d/1KgTrxyOktsScYAzJUB8fkSjr8plVR9MY/view?usp=drive_link" download></a>
-          <button class="w3-button w3-light-grey w3-padding-large w3-section">
-              <i class="fa fa-download"></i> Download Resume
-          </button>
-      </a>
+      <!-- Testimonials -->
+      <div>
+        <h3 class="w3-text" style="font-weight: bold; color: rgb(255, 255, 255);">My Experiences</h3>
+        <hr style="width:200px" class="w3-opacity">
+
+        <div class="w3-padding-10 w3-container">
+          <ul class="w3-ul w3-white w3-center w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-large w3-padding-32">Enrichment Programs Certified Spesific Independent
+              Study (Research Assistant)</li>
+            <li class="w3-light-grey w3-padding-24">
+              <img src="image/binuslogo.png" style="width: 100px">
+            </li>
+            <li class="w3-padding-16">Binus University</li>
+            <li class="w3-padding-16">Paper Title: ‘’Identifying Regional Patterns of Malnutrition: A
+              Clustering Analysis of Stunting in Indonesian Infants’’</li>
+            <li class="w3-padding-16">February 2024 - Now</li>
+            <li class="w3-padding-5 w3-justify">
+              <ul>
+                  <li>Melakukan studi independen untuk menganalisis regional
+                    pola gizi buruk pada bayi Indonesia yang menggunakan
+                    teknik pengelompokan, yang bertujuan untuk menginformasikan nutrisi yang ditargetkan
+                    intervensi.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-padding-24 w3-container">
+          <ul class="w3-ul w3-white w3-center w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Internship Program</li>
+            <li class="w3-light-grey w3-padding-24">
+              <img src="image/gmf.png" style="width: 100px">
+            </li>
+            <li class="w3-padding-16">PT. Garuda Maintenance Facility Aeroasia Tbk.</li>
+            <li class="w3-padding-16">Junior Aircraft Technician</li>
+            <li class="w3-padding-16">Januari 2020 - Maret 2020</li>
+            <li class="w3-padding-5 w3-justify">Saya memiliki pengalaman sebagai Junior Aircraft Technician di Line Maintenance Services dengan rating 
+              Airbus A330-200/300/900Neo dan Boeing 777-400/737-Max. 
+              Dalam peran ini, saya bertanggung jawab atas:
+              <ul>
+                  <li>Pemeliharaan dan Inspeksi: Melakukan pemeriksaan rutin untuk memastikan pesawat dalam kondisi optimal.</li>
+                  <li>Perbaikan Teknis: Mengidentifikasi dan memperbaiki masalah teknis pada pesawat, termasuk sistem avionik, hidrolik, dan mesin.</li>
+                  <li>Kepatuhan terhadap Regulasi: Memastikan bahwa semua prosedur pemeliharaan memenuhi standar keselamatan penerbangan internasional dan peraturan yang berlaku.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
   
       <!-- Experience -->
-          <h3 class="w3-padding-16 w3-text-light-grey" style="font-weight: bold;">Experiences</h3>
+      <div>
+          <h3 class="w3-text" style="font-weight: bold; color: rgb(255, 255, 255);" id="project">My Projects</h3>
           <hr style="width:200px" class="w3-opacity">
-          <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-half ">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Enrichment Programs Certified Spesific Independent
-                  Study</li>
-                <li class="w3-light-grey w3-padding-24">
-                  <img src="image/binuslogo.png" style="width: 25%">
-                </li>
-                <li class="w3-padding-16">Binus University</li>
-                <li class="w3-padding-16">Paper Title: ‘’Identifying Regional Patterns of Malnutrition: A
-                  Clustering Analysis of Stunting in Indonesian Infants’’</li>
-                <li class="w3-padding-16">February 2024 - Now</li>
-                <li class="w3-padding-5 w3-justify">
-                  <ul>
-                      <li>Melakukan studi independen untuk menganalisis regional
-                        pola gizi buruk pada bayi Indonesia yang menggunakan
-                        teknik pengelompokan, yang bertujuan untuk menginformasikan nutrisi yang ditargetkan
-                        intervensi.</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-      
+          <div class="w3-row-padding" style="margin:0 -16px">     
             <div class="w3-half">
               <ul class="w3-ul w3-white w3-center w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Front-End Developer & UI/UX Designer</li>
+                <li class="w3-dark-grey w3-xlarge w3-padding-32">Front-End Developer & UI/UX Designer (Web programming)</li>
                 <li class="w3-light-grey w3-padding-24">
                   <img src="image/binuslogo.png" style="width: 25%">
                 </li>
@@ -174,7 +193,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
             <div class="w3-half ">
               <ul class="w3-ul w3-white w3-center w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Research Assistant</li>
+                <li class="w3-dark-grey w3-xlarge w3-padding-32">Research Assistant (Research Methodology)</li>
                 <li class="w3-light-grey w3-padding-24">
                   <img src="image/binuslogo.png" style="width: 25%">
                 </li>
@@ -184,50 +203,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                 <li class="w3-padding-16">February 2023 - July 2023</li>
                 <li class="w3-padding-5 w3-justify">
                   <ul>
-                    <li>Melakukan tinjauan literatur komprehensif tentang algoritme pembelajaran mesin untuk mendeteksi dan menganalisis perkataan yang mendorong kebencian.</li>
+                    <li>Melakukan tinjauan literatur komprehensif tentang algoritma pembelajaran mesin untuk mendeteksi dan menganalisis perkataan yang mendorong kebencian.</li>
                     <li>Mengembangkan dan menerapkan model pembelajaran yang diawasi dan tidak diawasi untuk mengidentifikasi faktor-faktor utama yang berkontribusi terhadap ujaran kebencian di platform online.</li>
                   </ul>
                 </li>
               </ul>
             </div>
-      
-            <div class="w3-half">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Internship Program</li>
-                <li class="w3-light-grey w3-padding-24">
-                  <img src="image/gmf.png" style="width: 50%">
-                </li>
-                <li class="w3-padding-16">PT. Garuda Maintenance Facility Aeroasia Tbk.</li>
-                <li class="w3-padding-16">Junior Aircraft Technician</li>
-                <li class="w3-padding-16">Januari 2020 - Maret 2020</li>
-                <li class="w3-padding-5 w3-justify">Saya memiliki pengalaman sebagai Junior Aircraft Technician di Line Maintenance Services dengan rating 
-                  Airbus A330-200/300/900Neo dan Boeing 777-400/737-Max. 
-                  Dalam peran ini, saya bertanggung jawab atas:
-                  <ul>
-                      <li>Pemeliharaan dan Inspeksi: Melakukan pemeriksaan rutin untuk memastikan pesawat dalam kondisi optimal.</li>
-                      <li>Perbaikan Teknis: Mengidentifikasi dan memperbaiki masalah teknis pada pesawat, termasuk sistem avionik, hidrolik, dan mesin.</li>
-                      <li>Kepatuhan terhadap Regulasi: Memastikan bahwa semua prosedur pemeliharaan memenuhi standar keselamatan penerbangan internasional dan peraturan yang berlaku.</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-  
-  <!-- Testimonials -->
-  </div>
-    <h3 class="w3-padding-24 w3-text-light-grey" style="font-weight: bold;">My Reputation</h3>
-    <hr style="width:200px" class="w3-opacity">  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-  </div>
+          </div>
+
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey" style="font-weight: bold;">My Certificated</h2>
+    <h2 class="w3-text" style="font-weight: bold; color: rgb(255, 255, 255);">My Certificated</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
@@ -249,34 +236,32 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- End Portfolio Section -->
   </div>
 
+     <!-- Download Resume -->
+     <div>
+       <h3 class="w3-text" style="font-weight: bold; color: rgb(255, 255, 255);">Unduh CV Saya</h3>
+       <hr style="width:200px" class="w3-opacity">
+         <a href="https://drive.google.com/file/d/1KgTrxyOktsScYAzJUB8fkSjr8plVR9MY/view?usp=drive_link" download></a>
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+         </a>
+      </div>
+
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey" style="font-weight: bold;">Contact Me</h2>
+    <h2 class="w3-text" style="font-weight: bold; color: rgb(255, 255, 255);">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bogor, ID</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bogor, Indonesia</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: -</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: walidfernando21@gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
+    </div>
   <!-- End Contact Section -->
   </div>
   
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
