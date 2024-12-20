@@ -11,16 +11,41 @@
 <style>
     .container {
     display: flex;
-    justify-content: space-between; /* Mengatur gambar kanan-kiri */
-    align-items: center;
-    width: 100%; /* Lebar penuh */
+    justify-content: center; /* Gambar berada di tengah */
+    align-items: center; /* Gambar sejajar vertikal */
+    gap: 20px; /* Jarak antar gambar */
     padding: 20px;
+    }
+    
+    .container img {
+        width: 100px; /* Ukuran gambar */
+        height: auto; /* Menjaga aspek rasio */
+    }
+
+    
+      .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccffcc; /* Warna latar belakang hijau muda */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
   }
 
-  .container img {
-    width: 100px; /* Ukuran gambar */
+  .icon-container a img {
+    width: 50px; /* Ukuran gambar */
     height: auto; /* Menjaga aspek rasio */
+    margin: 10px 0;
+    transition: transform 0.3s ease; /* Animasi saat hover */
   }
+
+  .icon-container a img:hover {
+    transform: scale(1.2); /* Perbesar gambar saat di-hover */
+    cursor: pointer; /* Ubah kursor jadi tangan */
+  }
+
+    
   body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   .w3-row-padding img {margin-bottom: 12px}
   /* Set the width of the sidebar to 120px */
@@ -387,6 +412,21 @@
       <h2 class="w3-text" style="font-weight: bold; color: rgb(255, 255, 255);">Contact Me</h2>
       <hr style="width:200px" class="w3-opacity">
 
+          <div class="icon-container">
+              <!-- Tautan Lokasi -->
+              <a href="https://maps.google.com" target="_blank">
+                  <img src="image/location-icon.png" alt="Lokasi">
+              </a>
+              <!-- Tautan Telepon -->
+              <a href="tel:+6281234567890">
+                  <img src="image/phone-icon.png" alt="Telepon">
+              </a>
+              <!-- Tautan Email -->
+              <a href="mailto:email@example.com">
+                  <img src="image/email-icon.png" alt="Email">
+              </a>
+          </div>
+        
       <div class="w3-section">
         <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bogor, Indonesia</p>
         <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: -</p>
